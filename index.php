@@ -47,7 +47,7 @@
 					if(insert_into_tabel())
 					{
 					?>
-					<p>"string"</p>
+					<p>string</p>
 				<?php
 					}
 					?>
