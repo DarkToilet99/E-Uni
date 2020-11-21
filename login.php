@@ -18,6 +18,7 @@ else
       echo"<center>";
       echo "Email-ul exista deja in baza de date!";
       echo"</center>";
+	  
   }
   else
   {

@@ -21,7 +21,7 @@
 			if($query1=mysqli_query($conn,"insert into users(firstName,lastName,email,password) values('$firstName','$lastName','$email','$password')")
 				or die("Inserarea nu a putut avea loc!".mysqli_error($conn)))
 				{
-
+			
 					$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     			$charactersLength = strlen($characters);
     			$randomString = '';
@@ -38,10 +38,11 @@
 		else
 		{
 				echo"<center>";
-				echo "Disciplina respectiva exista deja in baza de date!";
+				echo "Email-ul respectiv exista deja in baza de date!";
 				echo"</center>";
 
 		}
 
 
 	}
+?>
