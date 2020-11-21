@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 .container {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: linear-gradient(180deg, #1d2fca 0%, rgba(0, 129, 217, 0.15) 100%);
   background-position: center;
@@ -142,12 +143,14 @@ span {
 
 #footer {
   background-color: transparent;
-  position: absolute;
+  position: relative;
   height: 35px;
   bottom: 0;
   clear: both;
   width: 100%;
   text-align: center;
+  margin-top: 0px;
+  top:43vh;
 }
 p {
   color: #555;
@@ -162,7 +165,24 @@ p {
   zoom: 1;
 }
 
+@media screen and (max-width:550px){
+	.photoleft{
+	  visibility: hidden;
+  }
+  .photoright{
+	  visibility:hidden;
+  }
+  #footer
+  {
+	  top:55vh;
+  }
+}
+
 @media screen and (max-width: 390px) {
+  #footer
+  {
+	  top:55vh;
+  }
   .form-box {
     width: 100vw;
   }
@@ -191,25 +211,21 @@ p {
   .logo {
     width: 100vw;
   }
-  .photoleft{
-	  visibility: hidden;
-  }
-  .photoright{
-	  visibility:hidden;
-  }
+  
 }
   .photoleft{
 	  position:absolute;
 	  left:20px;
-	  width:420px;
-	  height:350px;
+	  width:30vw;
+	  height:50vh;
 	  bottom:0px;
+	  z-index:-5;
   }
   .photoright{
 	  position:absolute;
 	  right:20px;
-	  width:420px;
-	  height:350px;
+	  width:30vw;
+	  height:50vh;
 	  bottom:0px;
   }
   .imgemail{
