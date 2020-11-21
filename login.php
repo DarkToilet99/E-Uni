@@ -27,7 +27,7 @@ else
 
     $row1 = mysqli_fetch_array($query2);
 
-    if($email == $row1["email"] && $row1["password"] == $password)
+    if($email == $row1["email"] && $row1["password"] == hash ("whirlpool" , $password))
     {
       echo "Login Success";
     }
