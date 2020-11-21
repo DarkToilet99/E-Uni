@@ -3,7 +3,7 @@
 	$firstName = $_POST["firstName"];
 	$lastName = $_POST["lastName"];
 	$email = $_POST["email"];
-	$password = $_POST["password"];
+	$password = hash ("whirlpool" , $_POST["password"]);
 	$id = 0;
 	//Database connection...
 	$conn = mysqli_connect('localhost','root','','users');
@@ -20,6 +20,7 @@
 		{
 				$query1=mysqli_query($conn,"insert into users(firstName,lastName,email,password) values('$firstName','$lastName','$email','$password')")
 				or die("Inserarea nu a putut avea loc!".mysqli_error($conn));
+
 		}
 		else
 		{
