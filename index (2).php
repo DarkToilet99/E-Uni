@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Start page</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		input[type="text"]:focus{
+	    	border-color: #00B0FF;
+  			box-shadow: 0 0 8px 0 #00B0FF;
+		}
+		input[type="password"]:focus{
+	    	border-color: #00B0FF;
+  			box-shadow: 0 0 8px 0 #00B0FF;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		
+		<div class="form-box">
+			<div class="logo-box">
+				<img class="logo" src="logo.png">
+			</div>
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+
+			<form id="login" action="login.php" method="post" class="input-group">
+				<img class="imgemail" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126162360_508298636716603_7765409972823226027_n.png?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=Mh8VY1A9L_4AX_PXq0g&_nc_ht=scontent.ftsr1-2.fna&oh=de35921c7266a06c9632e289a7ea762a&oe=5FDE1B82">
+				<input type="text" class="input-field" placeholder="Email" name="email" required>
+				<br><img class="imgpass" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126181071_679332439396817_8459472494132535412_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=3e2PKJ8WvmsAX87Sim4&_nc_ht=scontent.ftsr1-2.fna&oh=37e43c24d5e53869992e5b7450bdb9ee&oe=5FDF48D4">
+				<input type="Password" class="input-field" placeholder="Enter Password" name="password" required>
+				<input type="Checkbox" class="check-box"><span>Remember me</span>
+				<br><br><br>
+				<button type="submit" class="submit-btn">Log in</button>
+			</form>
+
+			<form id="register" class="input-group-register">
+			<img class="imgname" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126505628_182489286799238_1349839295546244210_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=vBwXTqnKr3oAX_nky-F&_nc_ht=scontent.ftsr1-2.fna&oh=d909684029238d47671a1af882fadc86&oe=5FDE2A40">
+				<input type="text" class="input-field" placeholder="First name" id="firstName" name="firstName" required>
+				<input type="text" class="input-field" placeholder="Last name" id="lastName" name="lastName" required>
+				<br><img class="imgemail" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126162360_508298636716603_7765409972823226027_n.png?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=Mh8VY1A9L_4AX_PXq0g&_nc_ht=scontent.ftsr1-2.fna&oh=de35921c7266a06c9632e289a7ea762a&oe=5FDE1B82">
+				<input type="text" class="input-field" placeholder="Email adress" id="email" name="email" required>
+				<br><img class="imgpass" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126181071_679332439396817_8459472494132535412_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=3e2PKJ8WvmsAX87Sim4&_nc_ht=scontent.ftsr1-2.fna&oh=37e43c24d5e53869992e5b7450bdb9ee&oe=5FDF48D4">
+				<input type="Password" class="input-field" placeholder="Password" id="password" name="password" required>
+				<input type="Password" class="input-field" placeholder="Confirm password" id="confirmpassword" name="confirmpassword" required><br>
+				<button type="submit" class="submit-btn-register">Register</button>
+
+				<?php
+				 include 'connect.php'
+					if(insert_into_tabel())
+					{
+					?>
+					
+				<?php
+					}
+					?>
+
+
+				
+			</form>
+		</div>
+	</div>
+
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register(){
+			x.style.transition = "visibility 0s ";
+			y.style.transition = "visibility 1s ";
+			y.style.visibility = "visible";
+			x.style.visibility = "hidden";
+
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.transition = "visibility 1s";
+			y.style.transition = "visibility 0s";
+			x.style.visibility = "visible";
+			y.style.visibility = "hidden";
+
+			z.style.left = "0px";
+		}
+	</script>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<img src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/126206177_220447599500793_3767800299100674333_n.png?_nc_cat=109&ccb=2&_nc_sid=ae9488&_nc_ohc=snIxFe82nVsAX-a8sX3&_nc_ht=scontent.ftsr1-2.fna&oh=dcad1ac439534e077a1da1fe6cf47d67&oe=5FDECE25" class="photoleft">
+	<img src="https://scontent.ftsr1-1.fna.fbcdn.net/v/t1.15752-9/126195392_799817820862940_5163506698813815660_n.png?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=PEMIG4iDtHcAX-QPh18&_nc_oc=AQl3cUqc0wR4yH61-fXpvfXrmA3Mq_dlX84QKyyhJ37pikbOf1qX46YvCy2VKilCbSo&_nc_ht=scontent.ftsr1-1.fna&oh=4fc8b7aab92156ba5d25fc6b02fe9d90&oe=5FDEF2B2" class="photoright">
+<footer id="footer">
+		<p>Copyright &copy; 2020, E-Uni</p>
+	</footer>
+
+</body>
+</html>
