@@ -192,3 +192,17 @@ p {
     width: 100vw;
   }
 }
+  .photoleft{
+	  position:absolute;
+	  left:20px;
+	  width:250px;
+	  height:200px;
+	  
+  }
+  .photoright{
+	  position:absolute;
+	  right:20px;
+	  width:250px;
+	  height:200px;
+  }
+
