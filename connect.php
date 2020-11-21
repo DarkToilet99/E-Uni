@@ -21,6 +21,7 @@
 			if($query1=mysqli_query($conn,"insert into users(firstName,lastName,email,password) values('$firstName','$lastName','$email','$password')")
 				or die("Inserarea nu a putut avea loc!".mysqli_error($conn)))
 				{
+
 					$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     			$charactersLength = strlen($characters);
     			$randomString = '';
@@ -28,10 +29,8 @@
 					{
         		$randomString .= $characters[rand(0, $charactersLength - 1)];
   				}
+					include 'mail.php';
 
-					$subject = "E-UNI Account Verification";
-					$message = "Hello! and welcome to E-UNI Here is your cod for verification: $randomString";
-					mail ( $email , $subject , $message);
 
 				}
 
