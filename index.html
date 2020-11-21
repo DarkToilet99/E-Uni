@@ -17,7 +17,7 @@
 
 <body>
 	<div class="container">
-		
+
 		<div class="form-box">
 			<div class="logo-box">
 				<img class="logo" src="logo.png">
@@ -38,7 +38,7 @@
 				<button type="submit" class="submit-btn">Log in</button>
 			</form>
 
-			<form id="register" class="input-group-register">
+			<form id="register" action="connect.php" method="post" class="input-group-register">
 			<img class="imgname" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126505628_182489286799238_1349839295546244210_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=vBwXTqnKr3oAX_nky-F&_nc_ht=scontent.ftsr1-2.fna&oh=d909684029238d47671a1af882fadc86&oe=5FDE2A40">
 				<input type="text" class="input-field" placeholder="First name" id="firstName" name="firstName" required>
 				<input type="text" class="input-field" placeholder="Last name" id="lastName" name="lastName" required>
@@ -49,18 +49,7 @@
 				<input type="Password" class="input-field" placeholder="Confirm password" id="confirmpassword" name="confirmpassword" required><br>
 				<button type="submit" class="submit-btn-register">Register</button>
 
-				<?php
-				 include 'connect.php'
-					if(insert_into_tabel())
-					{
-					?>
-					
-				<?php
-					}
-					?>
 
-
-				
 			</form>
 		</div>
 	</div>
@@ -90,7 +79,7 @@
 	<img src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/126206177_220447599500793_3767800299100674333_n.png?_nc_cat=109&ccb=2&_nc_sid=ae9488&_nc_ohc=snIxFe82nVsAX-a8sX3&_nc_ht=scontent.ftsr1-2.fna&oh=dcad1ac439534e077a1da1fe6cf47d67&oe=5FDECE25" class="photoleft">
 	<img src="https://scontent.ftsr1-1.fna.fbcdn.net/v/t1.15752-9/126195392_799817820862940_5163506698813815660_n.png?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=PEMIG4iDtHcAX-QPh18&_nc_oc=AQl3cUqc0wR4yH61-fXpvfXrmA3Mq_dlX84QKyyhJ37pikbOf1qX46YvCy2VKilCbSo&_nc_ht=scontent.ftsr1-1.fna&oh=4fc8b7aab92156ba5d25fc6b02fe9d90&oe=5FDEF2B2" class="photoright">
 
-	
+
 <footer id="footer">
 		<p>Copyright &copy; 2020, E-Uni</p>
 	</footer>
