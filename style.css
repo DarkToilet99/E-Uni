@@ -5,37 +5,36 @@
 .container {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, #1D2FCA 0%, rgba(0, 129, 217, 0.15) 100%);
+  background: linear-gradient(180deg, #1d2fca 0%, rgba(0, 129, 217, 0.15) 100%);
   background-position: center;
   background-size: cover;
   position: absolute;
   overflow: auto;
 }
 
-.logo{
-  position: absolute;
+.logo {
   width: 368px;
   height: 169px;
-  left: 600px;
-  top: 64px;
+  left: 40vw;
+  top: 0;
 }
 
 .form-box {
   width: 380px;
-  height: 380px;
+  height: 580px;
   position: relative;
   margin: auto;
-  margin-top: 15vw;
-  padding: 5px;
+  margin-top: 10vw;
+  padding: 0px;
   background: transparent;
 }
 
 .button-box {
   width: 215px;
   margin: 35px auto;
-  margin-top: 50px;
+  margin-top: 30px;
   position: relative;
-  box-shadow: 0px 0px 20px 3px #00B0FF;
+  box-shadow: 0px 0px 20px 3px #00b0ff;
   border-radius: 30px;
   background-color: white;
 }
@@ -55,7 +54,7 @@
   position: absolute;
   width: 105px;
   height: 100%;
-  background: #00B0FF;
+  background: #00b0ff;
   border-radius: 30px;
   transition: 0.5s;
 }
@@ -81,18 +80,17 @@
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-bottom: 0px solid black;
   outline: none;
-  background: #E8E8E8;
+  background: #e8e8e8;
   border-radius: 50px;
   text-align: center;
 }
 
-.check-box{
+.check-box {
   margin: 20px 10px 43px 0px;
 }
 
-span{
+span {
   color: black;
   font-size: 15px;
 }
@@ -103,18 +101,18 @@ span{
   cursor: pointer;
   display: block;
   margin: auto;
-  background: #00B0FF;
+  background: #00b0ff;
   border: 0;
   outline: none;
   border-radius: 30px;
 }
 
 .submit-btn:hover {
-    box-shadow: 0px 0px 10px 3px #00B0FF;
+  box-shadow: 0px 0px 10px 3px #00b0ff;
 }
 
 .submit-btn-register:hover {
-    box-shadow: 0px 0px 10px 3px #00B0FF;
+  box-shadow: 0px 0px 10px 3px #00b0ff;
 }
 
 .submit-btn-register {
@@ -123,32 +121,23 @@ span{
   cursor: pointer;
   display: block;
   margin: auto;
-  margin-top:24px;
-  background: #00B0FF;
+  margin-top: 24px;
+  background: #00b0ff;
   border: 0;
   outline: none;
   border-radius: 30px;
 }
 
 #login {
-  left: 50px;
+  left: 40px;
   visibility: visible;
+  margin-top: 150px;
 }
 
 #register {
-  left: 50px;
+  top: 270px;
+  left: 40px;
   visibility: hidden;
-}
-
-.photoleft{
-  vertical-align: bottom;
-  float: left;
-
-}
-
-.photoright{
-  vertical-align: bottom;
-  float: right;
 }
 
 #footer {
@@ -160,7 +149,7 @@ span{
   width: 100%;
   text-align: center;
 }
-p{
+p {
   color: #555;
 }
 
@@ -171,4 +160,35 @@ p{
 @-ms-viewport {
   width: extend-to-zoom;
   zoom: 1;
+}
+
+@media screen and (max-width: 390px) {
+  .form-box {
+    width: 100vw;
+  }
+  #login {
+    width: 90vw;
+    left: 5vw;
+    right: 5vw;
+  }
+  .submit-btn {
+    left: 5vw;
+    right: 5vw;
+    width: 90vw;
+    transition: 0.5s;
+  }
+  #register {
+    width: 90vw;
+    left: 5vw;
+    right: 5vw;
+  }
+  .submit-btn-register {
+    left: 5vw;
+    right: 5vw;
+    width: 90vw;
+    transition: 0.5s;
+  }
+  .logo {
+    width: 100vw;
+  }
 }
