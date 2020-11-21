@@ -16,7 +16,7 @@ else
   if($nr==0)
   {
       echo"<center>";
-      echo "Disciplina respectiva exista deja in baza de date!";
+      echo "Email-ul exista deja in baza de date!";
       echo"</center>";
   }
   else
@@ -26,7 +26,7 @@ else
     $query2=mysqli_query($conn,"select email,password from users where email = '$email'");
 
     $row1 = mysqli_fetch_array($query2);
-
+	
     if($email == $row1["email"] && $row1["password"] == hash ("whirlpool" , $password))
     {
       echo "Login Success";
