@@ -17,31 +17,33 @@
 
 <body>
 	<div class="container">
-		<div class="logo-box">
-			<img class="logo" src="logo.png">
-		</div>
+		
 		<div class="form-box">
+			<div class="logo-box">
+				<img class="logo" src="logo.png">
+			</div>
 			<div class="button-box">
 				<div id="btn"></div>
 				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
 				<button type="button" class="toggle-btn" onclick="register()">Register</button>
 			</div>
 
-			<form id="login" class="input-group" action="connect.php" method="post">
-				<input type="text" class="input-field" placeholder="Email" required>
-				<input type="Password" class="input-field" placeholder="Enter Password" required>
+			<form id="login" action="login.php" method="post" class="input-group">
+				<input type="text" class="input-field" placeholder="Email" name="email" required>
+				<input type="Password" class="input-field" placeholder="Enter Password" name="password" required>
 				<input type="Checkbox" class="check-box"><span>Remember me</span>
 				<br><br><br>
 				<button type="submit" class="submit-btn">Log in</button>
 			</form>
 
-			<form id="register" action="connect.php" method="post" class="input-group-register">
+			<form id="register" class="input-group-register">
 				<input type="text" class="input-field" placeholder="First name" id="firstName" name="firstName" required>
 				<input type="text" class="input-field" placeholder="Last name" id="lastName" name="lastName" required>
 				<input type="text" class="input-field" placeholder="Email adress" id="email" name="email" required>
 				<input type="Password" class="input-field" placeholder="Password" id="password" name="password" required>
 				<input type="Password" class="input-field" placeholder="Confirm password" id="confirmpassword" name="confirmpassword" required><br>
 				<button type="submit" class="submit-btn-register">Register</button>
+<<<<<<< HEAD
 				<?php
 				 include 'connect.php'
 					if(insert_into_tabel())
@@ -54,6 +56,8 @@
 
 
 				?>
+=======
+>>>>>>> e7bdbfd5b357405fc4f5cf4764de563eca98e6ad
 			</form>
 		</div>
 	</div>
@@ -83,7 +87,7 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<img src="photo2.png" class="photoleft">
 	<img src="photo1.png" class="photoright">
-
+	
 	<footer id="footer">
 		<p>Copyright &copy; 2020, E-Uni</p>
 	</footer>

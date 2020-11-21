@@ -1,6 +1,4 @@
 <?php
-function insert_into_tabel()
-{
 
 	$firstName = $_POST["firstName"];
 	$lastName = $_POST["lastName"];
@@ -25,11 +23,11 @@ function insert_into_tabel()
 		}
 		else
 		{
-				return 0;
+				echo"<center>";
+				echo "Disciplina respectiva exista deja in baza de date!";
+				echo"</center>";
 
 		}
 
 
 	}
-
-}
