@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #1D2FCA 0%, rgba(0, 129, 217, 0.15) 100%);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  overflow: auto;
+}
+
+.logo{
+  position: absolute;
+  width: 368px;
+  height: 169px;
+  left: 600px;
+  top: 64px;
+}
+
+.form-box {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  margin: auto;
+  margin-top: 15vw;
+  padding: 5px;
+  background: transparent;
+}
+
+.button-box {
+  width: 215px;
+  margin: 35px auto;
+  margin-top: 50px;
+  position: relative;
+  box-shadow: 0px 0px 20px 3px #00B0FF;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.toggle-btn {
+  padding: 8px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 105px;
+  height: 100%;
+  background: #00B0FF;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-group {
+  top: 130px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-group-register {
+  top: 110px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0px solid black;
+  outline: none;
+  background: #E8E8E8;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.check-box{
+  margin: 20px 10px 43px 0px;
+}
+
+span{
+  color: black;
+  font-size: 15px;
+}
+
+.submit-btn {
+  width: 50%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #00B0FF;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.submit-btn:hover {
+    box-shadow: 0px 0px 10px 3px #00B0FF;
+}
+
+.submit-btn-register:hover {
+    box-shadow: 0px 0px 10px 3px #00B0FF;
+}
+
+.submit-btn-register {
+  width: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top:24px;
+  background: #00B0FF;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+#login {
+  left: 50px;
+  visibility: visible;
+}
+
+#register {
+  left: 50px;
+  visibility: hidden;
+}
+
+.photoleft{
+  vertical-align: bottom;
+  float: left;
+
+}
+
+.photoright{
+  vertical-align: bottom;
+  float: right;
+}
+
+#footer {
+  background-color: transparent;
+  position: absolute;
+  height: 35px;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+p{
+  color: #555;
+}
+
+@viewport {
+  zoom: 1;
+  width: extend-to-zoom;
+}
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1;
+}
