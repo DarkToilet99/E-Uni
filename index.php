@@ -27,9 +27,9 @@
 				<button type="button" class="toggle-btn" onclick="register()">Register</button>
 			</div>
 
-			<form id="login" class="input-group" action="connect.php" method="post">
-				<input type="text" class="input-field" placeholder="Email" required>
-				<input type="Password" class="input-field" placeholder="Enter Password" required>
+			<form id="login" action="login.php" method="post" class="input-group">
+				<input type="text" class="input-field" placeholder="Email" name="email" required>
+				<input type="Password" class="input-field" placeholder="Enter Password" name="password" required>
 				<input type="Checkbox" class="check-box"><span>Remember me</span>
 				<br><br><br>
 				<button type="submit" class="submit-btn">Log in</button>
@@ -42,18 +42,6 @@
 				<input type="Password" class="input-field" placeholder="Password" id="password" name="password" required>
 				<input type="Password" class="input-field" placeholder="Confirm password" id="confirmpassword" name="confirmpassword" required><br>
 				<button type="submit" class="submit-btn-register">Register</button>
-				<?php
-				 include 'connect.php'
-					if(insert_into_tabel())
-					{
-					?>
-					<p>"string"</p>
-				<?php
-					}
-					?>
-
-
-				?>
 			</form>
 		</div>
 	</div>
