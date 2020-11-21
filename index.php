@@ -17,7 +17,7 @@
 
 <body>
 	<div class="container">
-		
+
 		<div class="form-box">
 			<div class="logo-box">
 				<img class="logo" src="logo.png">
@@ -36,7 +36,7 @@
 				<button type="submit" class="submit-btn">Log in</button>
 			</form>
 
-			<form id="register" class="input-group-register">
+			<form id="register" class="input-group-register" action="connect.php" method="post">
 				<input type="text" class="input-field" placeholder="First name" id="firstName" name="firstName" required>
 				<input type="text" class="input-field" placeholder="Last name" id="lastName" name="lastName" required>
 				<input type="text" class="input-field" placeholder="Email adress" id="email" name="email" required>
@@ -72,7 +72,7 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<img src="photo2.png" class="photoleft">
 	<img src="photo1.png" class="photoright">
-	
+
 	<footer id="footer">
 		<p>Copyright &copy; 2020, E-Uni</p>
 	</footer>
