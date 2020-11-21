@@ -74,9 +74,9 @@
 }
 
 .input-field {
-  width: 100%;
+  width: 80%;
   padding: 5px 0;
-  margin: 5px 0;
+  margin: 5px 25px;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -191,18 +191,42 @@ p {
   .logo {
     width: 100vw;
   }
+  .photoleft{
+	  visibility: hidden;
+  }
+  .photoright{
+	  visibility:hidden;
+  }
 }
   .photoleft{
 	  position:absolute;
 	  left:20px;
-	  width:250px;
-	  height:200px;
-	  
+	  width:420px;
+	  height:350px;
+	  bottom:0px;
   }
   .photoright{
 	  position:absolute;
 	  right:20px;
-	  width:250px;
-	  height:200px;
+	  width:420px;
+	  height:350px;
+	  bottom:0px;
   }
-
+  .imgemail{
+	  position:absolute;
+	  margin-top: 6px;
+	  width:25px;
+	  height:25px;
+  }
+  .imgpass{
+	  position:absolute;
+	  margin-top: 6px;
+	  width:25px;
+	  height:25px;
+  }
+.imgname{
+	position:absolute;
+	  margin-top: 6px;
+	  width:25px;
+	  height:25px;
+}
