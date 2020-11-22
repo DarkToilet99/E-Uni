@@ -1,5 +1,6 @@
 <?php
-
+	header("Location: confirmare.html");
+	session_start(); 
 	$firstName = $_POST["firstName"];
 	$lastName = $_POST["lastName"];
 	$email = $_POST["email"];
@@ -21,7 +22,7 @@
 			if($query1=mysqli_query($conn,"insert into users(firstName,lastName,email,password) values('$firstName','$lastName','$email','$password')")
 				or die("Inserarea nu a putut avea loc!".mysqli_error($conn)))
 				{
-			
+
 					$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     			$charactersLength = strlen($characters);
     			$randomString = '';
@@ -30,19 +31,17 @@
         		$randomString .= $characters[rand(0, $charactersLength - 1)];
   				}
 					include 'mail.php';
-
-
+					$_SESSION['cod'] = $randomString;
 				}
 
 		}
 		else
 		{
 				echo"<center>";
-				echo "Email-ul respectiv exista deja in baza de date!";
+				echo "Userul exista deja in baza de date!";
 				echo"</center>";
 
 		}
 
 
 	}
-?>
