@@ -4,13 +4,13 @@
 }
 .container {
   min-height: 100%;
-  height: 100%;
+  height: 110%;
   width: 100%;
   background: linear-gradient(180deg, #1d2fca 0%, rgba(0, 129, 217, 0.15) 100%);
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 .par {
   font-family: Arial;
@@ -198,7 +198,6 @@ span {
   top: 0;
   width: 100%;
   text-align: center;
-  margin-top:500px;
 }
 
 p {
@@ -316,13 +315,4 @@ p {
   margin-top: 6px;
   width: 25px;
   height: 25px;
-}
-.cont{
-	font-family:Calibri;
-	font-size:15px;
-}
-h2{
-	margin-top:10px;
-	margin-left:10px;
-	color:white;
 }
