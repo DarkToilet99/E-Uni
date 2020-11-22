@@ -47,7 +47,7 @@
 				<br><img class="imgpass" src="https://scontent.ftsr1-2.fna.fbcdn.net/v/t1.15752-9/cp0/126181071_679332439396817_8459472494132535412_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=3e2PKJ8WvmsAX87Sim4&_nc_ht=scontent.ftsr1-2.fna&oh=37e43c24d5e53869992e5b7450bdb9ee&oe=5FDF48D4">
 				<input type="Password" class="input-field" placeholder="Password" id="password" name="password" required>
 				<input type="Password" class="input-field" placeholder="Confirm password" id="confirmpassword" name="confirmpassword" required><br>
-				<button type="submit" class="submit-btn-register">Register</button>
+				<button type="submit" class="submit-btn-register" >Register</button>
 
 
 			</form>
